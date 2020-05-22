@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EAD157B1-B34B-48EC-93D9-4BB2B9940276}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>HireGauge</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>Pure</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>Pure</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Admin.cpp" />
+    <ClCompile Include="AdminDashboard.cpp" />
+    <ClCompile Include="AdminLogin.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Assessment.cpp" />
+    <ClCompile Include="AssessmentEditor.cpp" />
+    <ClCompile Include="AssessmentViewer.cpp" />
+    <ClCompile Include="Candidate.cpp" />
+    <ClCompile Include="CandidateDashboard.cpp" />
+    <ClCompile Include="CandidateLogin.cpp" />
+    <ClCompile Include="Compose.cpp" />
+    <ClCompile Include="Candidate_Profile.cpp" />
+    <ClCompile Include="CreateJobOpening.cpp" />
+    <ClCompile Include="Employer.cpp" />
+    <ClCompile Include="EmployerDashboard.cpp" />
+    <ClCompile Include="EmployerLogin.cpp" />
+    <ClCompile Include="Employer_Profile.cpp" />
+    <ClCompile Include="HireGauge.cpp" />
+    <ClCompile Include="JobExplorer.cpp" />
+    <ClCompile Include="ManageCandidates.cpp" />
+    <ClCompile Include="ManageEmployers.cpp" />
+    <ClCompile Include="ManageJobApplications.cpp" />
+    <ClCompile Include="ManageJobOpenings.cpp" />
+    <ClCompile Include="ManagePracticeMaterial.cpp" />
+    <ClCompile Include="MyApplications.cpp" />
+    <ClCompile Include="MyMailbox.cpp" />
+    <ClCompile Include="MyResults.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="PracticeMaterial.cpp" />
+    <ClCompile Include="Question.cpp" />
+    <ClCompile Include="ResourceViewer.cpp" />
+    <ClCompile Include="Signup.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UpdateCredentials.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Admin.h" />
+    <ClInclude Include="AdminDashboard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AdminLogin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Assessment.h" />
+    <ClInclude Include="AssessmentEditor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AssessmentViewer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Candidate.h" />
+    <ClInclude Include="CandidateDashboard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CandidateLogin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Compose.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Candidate_Profile.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CreateJobOpening.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Employer.h" />
+    <ClInclude Include="EmployerDashboard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EmployerLogin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Employer_Profile.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="JobExplorer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="LoginAs.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ManageCandidates.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ManageEmployers.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ManageJobApplications.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ManageJobOpenings.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ManagePracticeMaterial.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyApplications.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyMailbox.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyResults.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="PracticeMaterial.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Question.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ResourceViewer.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Signup.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="UpdateCredentials.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessmentEditor.resx">
+      <DependentUpon>AssessmentEditor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AssessmentViewer.resx">
+      <DependentUpon>AssessmentViewer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CandidateDashboard.resx">
+      <DependentUpon>CandidateDashboard.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CandidateLogin.resx">
+      <DependentUpon>CandidateLogin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compose.resx">
+      <DependentUpon>Compose.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Candidate_Profile.resx">
+      <DependentUpon>Candidate_Profile.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateJobOpening.resx">
+      <DependentUpon>CreateJobOpening.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployerDashboard.resx">
+      <DependentUpon>EmployerDashboard.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployerLogin.resx">
+      <DependentUpon>EmployerLogin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employer_Profile.resx">
+      <DependentUpon>Employer_Profile.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobExplorer.resx">
+      <DependentUpon>JobExplorer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAs.resX">
+      <DependentUpon>LoginAs.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageCandidates.resx">
+      <DependentUpon>ManageCandidates.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageEmployers.resx">
+      <DependentUpon>ManageEmployers.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageJobApplications.resx">
+      <DependentUpon>ManageJobApplications.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageJobOpenings.resx">
+      <DependentUpon>ManageJobOpenings.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagePracticeMaterial.resx">
+      <DependentUpon>ManagePracticeMaterial.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyApplications.resx">
+      <DependentUpon>MyApplications.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMailbox.resx">
+      <DependentUpon>MyMailbox.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyResults.resx">
+      <DependentUpon>MyResults.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticeMaterial.resx">
+      <DependentUpon>PracticeMaterial.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourceViewer.resx">
+      <DependentUpon>ResourceViewer.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCredentials.resx">
+      <DependentUpon>UpdateCredentials.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

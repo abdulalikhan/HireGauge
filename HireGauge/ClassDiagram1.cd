@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Admin">
+    <Position X="0.5" Y="9" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAgAAAAAAAAAAQACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Admin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assessment">
+    <Position X="10" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAEQIAAAQAAABBAAAAgAAAAACBAAgAAAAIBAgA=</HashCode>
+      <FileName>Assessment.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Candidate">
+    <Position X="9.75" Y="9" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIAAAAgAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Candidate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Employer">
+    <Position X="3.5" Y="9" Width="6" />
+    <InheritanceLine Type="Person" ManuallyRouted="true">
+      <Path>
+        <Point X="6.375" Y="8.209" />
+        <Point X="6.375" Y="9" />
+        <Point X="6.5" Y="9" />
+      </Path>
+      <InheritanceModifierLabel ManuallyPlaced="true">
+        <Position X="0.264" Y="0.091" />
+      </InheritanceModifierLabel>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAEQIAMAAgIgAgAAAAIAAAAAEAAAAAACgCAgIAAAAA=</HashCode>
+      <FileName>Employer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Person">
+    <Position X="4.25" Y="0.5" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>SoAgQoAECIhIogggAAAMgACAAAAAACAAKACAggIAAgA=</HashCode>
+      <FileName>Person.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Question">
+    <Position X="14.25" Y="0.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAEAAAAAAEgHAAAAICAgA=</HashCode>
+      <FileName>Question.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
